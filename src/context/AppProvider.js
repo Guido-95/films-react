@@ -36,6 +36,7 @@ const AppProvider = ({children}) => {
                     type: CERCA_FILM,
                     payload: response.data.results,
                 });
+                console.log(response.data.results);
                 
             }catch(err){
                 console.log(err);

@@ -6,8 +6,8 @@ const Tessera = (props) => {
         
         <div className='contenitore-tessere'>
             {
-                props.backdrop_path ? (
-                    <img src={'https://image.tmdb.org/t/p/w342' + props.backdrop_path} alt="immagine" />
+                props.poster_path ? (
+                    <img src={'https://image.tmdb.org/t/p/w342' + props.poster_path} alt="immagine" />
                 ) : (
                     <img className="immagine-non-trovata" src="assets/immagine.jpeg" alt="immagine mancante" />
                 )
@@ -20,7 +20,7 @@ const Tessera = (props) => {
                 {
                 props.overview ? (
                     <div className="trama">
-                        <p>{props.overview.substr(0,250) + "..."}</p>
+                        <p>{props.overview}</p>
                     </div>
                 ) : (
                     <div className="trama">
