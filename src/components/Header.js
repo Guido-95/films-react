@@ -20,7 +20,7 @@ const Header = () => {
         <header id='header'>
             <h1 className='logo'> 
                 <a href='http://localhost:3000/'>
-                    React Films
+                    Movie Mania
                 </a> 
             </h1>
           
